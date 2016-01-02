@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.Bot", "Telegram.Bot\Telegram.Bot.csproj", "{42E7CD69-9C5F-4A63-9341-E8C98C7CB8AF}"
 EndProject
@@ -15,6 +15,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.Bot.Echo", "Telegram.Bot.Echo\Telegram.Bot.Echo.csproj", "{3AFF460B-0963-406C-8A57-29D9323BD206}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.Bot.WebHook", "Telegram.Bot.WebHook\Telegram.Bot.WebHook.csproj", "{97C91678-4323-4C99-81AD-AFF3C862CE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.Bot.Fabric", "Telegram.Bot.Fabric\Telegram.Bot.Fabric.csproj", "{89508B1F-F5C9-4B5C-9414-F362652D449D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{97C91678-4323-4C99-81AD-AFF3C862CE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97C91678-4323-4C99-81AD-AFF3C862CE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97C91678-4323-4C99-81AD-AFF3C862CE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89508B1F-F5C9-4B5C-9414-F362652D449D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89508B1F-F5C9-4B5C-9414-F362652D449D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89508B1F-F5C9-4B5C-9414-F362652D449D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89508B1F-F5C9-4B5C-9414-F362652D449D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
