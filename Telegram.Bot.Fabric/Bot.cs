@@ -5,11 +5,11 @@ using Telegram.Bot.Types;
 
 namespace Telegram.Bot.Fabric
 {
-    class Bot
+    public class Bot
     {
-        internal class Command: ResultingAction<Command, Update>
+        public class Command: ResultingAction<Command, Update>
         {
-            internal class Argument: ResultingAction<Argument, Update>
+            public class Argument: ResultingAction<Argument, Update>
             {
                 internal readonly IList<object> Triggers;
                 internal readonly Bot BotInstance;
@@ -111,7 +111,7 @@ namespace Telegram.Bot.Fabric
             }
         }
 
-        internal readonly Api ApiProxy;
+        public readonly Api ApiProxy;
         internal readonly IList<Command> Commands;
         internal readonly Dictionary<long, Session> Sessions;
 

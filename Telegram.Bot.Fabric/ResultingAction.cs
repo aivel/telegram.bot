@@ -8,7 +8,7 @@ using Telegram.Bot.Fabric.Tests;
 
 namespace Telegram.Bot.Fabric
 {
-    internal class ResultingAction<Type, UpdateType> where Type : class
+    public class ResultingAction<Type, UpdateType> where Type : class
     {
         // TODO: add ArgumentTypeMismatch, WrongArgument, Fail
         internal Action<Bot, long> _onPreAction;

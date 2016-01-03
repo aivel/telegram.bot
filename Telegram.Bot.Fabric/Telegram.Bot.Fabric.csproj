@@ -71,7 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bot.cs" />
-    <Compile Include="BotBuilder.cs" />
     <Compile Include="ResultingAction.cs" />
     <Compile Include="Tests\Argument_should.cs" />
     <Compile Include="Tests\Bot_should.cs" />

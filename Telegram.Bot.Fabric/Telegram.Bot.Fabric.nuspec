@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <projectUrl>https://github.com/aivel/telegram.bot.fabric</projectUrl>
+    <iconUrl>https://s.cafebazaar.ir/1/upload/icons/telegram.bot.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Basic functionality for Telegram Bot Fabric.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Telegram API Bot Fabric</tags>
+  </metadata>
+</package>

@@ -1,32 +1,31 @@
-## Telegram Bot Api Library
+## Telegram Bot Fabric Library
 
-C# library to talk to Telegrams Bot API (https://core.telegram.org/bots/api)
+C# library for buiding Telegram Bots using Telegram API (https://core.telegram.org/bots/api)
 
 ## Usage
 
 ```C#
-static async void testApiAsync()
+public void startEchoBot()
 {
-    var Bot = new Telegram.Bot.Api("your API access Token");
-    var me = await Bot.GetMe();
-    System.Console.WriteLine("Hello my name is " + me.FirstName);
-}
-```
+    var bot = new Telegram.Bot.Fabric.Bot("your Telegram API token");
 
-```C#
-static void testApi()
-{
-    var Bot = new Telegram.Bot.Api("your API access Token");
-    var me = Bot.GetMe().Result;
-    System.Console.WriteLine("Hello my name is " + me.FirstName);
+    bot.AddTextCommand(command => 
+        command.AddArgument(argument => 
+                argument.OnAction((botInstance, upd) =>
+                {
+                    botInstance.ApiProxy.SendTextMessage(upd.Message.Chat.Id, "Re: " + upd.Message.Text);
+                    return true;
+                })));
+            
+    bot.ProcessUpdates();
 }
 ```
 
 ## Installation
 
-Install as [NuGet package](https://www.nuget.org/packages/Telegram.Bot/):
+Install as [NuGet package](https://www.nuget.org/packages/Telegram.Bot.Fabric/):
 
-    Install-Package Telegram.Bot
+    Install-Package Telegram.Bot.Fabric
     
 ## API Coverage
 
